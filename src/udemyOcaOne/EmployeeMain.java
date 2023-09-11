@@ -143,7 +143,6 @@ public class EmployeeMain {
     Map<String,Long> listOfEmployeesByDepartment = new HashMap<>();
     listOfEmployeesByDepartment = countEmployeePerDepartment(listOfEmployees);
     System.out.println(listOfEmployeesByDepartment);
-
   }
 
   public static Map<String, Long> countMalesFemales(List<Employee> employeeList) {
