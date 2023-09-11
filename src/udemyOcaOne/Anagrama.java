@@ -4,10 +4,15 @@ import java.util.Arrays;
 
 /**
  * @author rferreira
+ * @code @t
+ * An anagram is a word or phrase formed by rearranging the letters
+ * of a different word or phrase, typically using all the original
+ * letters exactly once.(https://en.wikipedia.org/wiki/Anagram)
+ * secure" is an anagram of "rescue
  * Two different strings as input and return
  * a boolean if one is anagram of the other
  * 1. eliminate spaces, convert to lower,
- * 2. associate tpo an array and sort.
+ * 2. associate to an array and sort.
  * 3. if one is equals to the other sorted
  * 4. we have an anagram, otherwise not
  * 5. first check if the strings' length
@@ -17,8 +22,8 @@ public class Anagrama {
   public static void main(String[] args) {
     //String s1 = "The quick brown fox dog jumps over the lazy dog";
     //String s2 = "brown fox quick the dog jumps dog the lazy over";
-    String s1 = "Ricardo FERREira";
-    String s2 = "FERREIRA    RICARDo";
+    String s1 = "SecuRe";
+    String s2 = "RescUa";
 
 
     boolean response =  isAnagram(s1,s2);
@@ -46,7 +51,7 @@ public class Anagrama {
     System.out.println(s2);
 
     char [] s1aux = s1.toCharArray();
-    char [] s2aux = s1.toCharArray();
+    char [] s2aux = s2.toCharArray();
 
     Arrays.sort(s1aux);
     Arrays.sort(s2aux);
@@ -56,9 +61,8 @@ public class Anagrama {
     s1 = String.valueOf(s1aux);
     s2 = String.valueOf(s2aux);
 
-    if (s1.equals(s2)){
-      response = true;
-    }
+    if (s1.equals(s2)) response = true;
+
     return response;
   }
 }
