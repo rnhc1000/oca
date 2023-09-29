@@ -2,6 +2,15 @@ package udemyOcaOne;
 
 import java.util.*;
 
+@ClassPreamble (
+        author = "Ricardo Ferreira",
+        date = "25/08/2023",
+        currentRevision = 6,
+        lastModified = "25/08/2023",
+        lastModifiedBy = "Ricardo Ferreira",
+        reviewers = {}
+)
+
 public class ComparisonSorting {
   public static List<Integer> countingSort(List<Integer> arr) {
     List<Integer> response = new ArrayList<Integer>(Collections.nCopies(arr.size(),0));
