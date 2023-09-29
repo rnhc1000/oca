@@ -34,7 +34,11 @@ public class AverageGrades {
             {"Bob", "95"},
             {"Mark", "100"},
             {"Ricardo", "63"},
-            {"Mark", "100"}
+            {"Perpetua", "100"},
+            {"Perpetua", "85"},
+            {"Perpetua", "95"},
+            {"Perpetua", "25"},
+            {"Mark", "100"},
     };
 
     int bestOfAverages = bestAverage(scores);
