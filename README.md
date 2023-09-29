@@ -22,7 +22,7 @@ The design is structured as shown:
 ## _Built with_
 | Java | Git | IntelliJ | CentOS | VS Code | 
 |----------|----------|----------|----------|----------|
-![](https://ferreiras.dev.br/assets/images/icons/java-icon.svg)| ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | ![](https://ferreiras.dev.br/assets/images/icons/intellij-idea-svgrepo-com.svg) | ![](https://ferreiras.dev.br/assets/images/icons/linux-original.svg) | ![](https://ferreiras.dev.br/assets/images/icons/icons8-visual-studio-code.svg)  
+![](https://ferreiras.dev.br/assets/images/icons/java-icon.svg)| ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | ![](https://ferreiras.dev.br/assets/images/icons/icons8-intellij-idea.svg) | ![](https://ferreiras.dev.br/assets/images/icons/linux-original.svg) | ![](https://ferreiras.dev.br/assets/images/icons/icons8-visual-studio-code.svg)  
 
  ## _What I practiced_
 ```java
@@ -44,7 +44,9 @@ public class AverageGrades {
             {"Mark", "100"},
     };
     int bestOfAverages = bestAverage(scores);
+    System.out.println("The best Average is: " + bestOfAveages);
   }
+  
   public static int bestAverage(String[][] scores) {
     int bestAverage = Integer.MIN_VALUE;
     int average = 0;
