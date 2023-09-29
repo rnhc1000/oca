@@ -18,13 +18,20 @@ import java.util.Arrays;
  * 5. first check if the strings' length
  * 6. are different return false;
  */
+
+ @ClassPreamble(
+  author = "Ricardo Ferreira", 
+  date = "25/08/2023", 
+  currentRevision = 7, 
+  lastModified = "25/09/2023", 
+  lastModifiedBy = "Ricardo Ferreira", 
+  reviewers = {}
+  )
+
 public class Anagrama {
   public static void main(String[] args) {
-    //String s1 = "The quick brown fox dog jumps over the lazy dog";
-    //String s2 = "brown fox quick the dog jumps dog the lazy over";
-    String s1 = "SecuRe";
-    String s2 = "RescUa";
-
+    String s1 = "The quick brown fox dog jumps over the lazy dog";
+    String s2 = "brown fox quick the dog jumps do the lazy over";
 
     boolean response =  isAnagram(s1,s2);
     if (response) {
@@ -39,27 +46,23 @@ public class Anagrama {
     String regex = "\\s";
     s1 = s1.replaceAll(regex,"");
     s2 = s2.replaceAll(regex, "");
-    int lenS1 = s1.length();
-    int lenS2 = s2.length();
+    int lenStrOne = s1.length();
+    int lenStrTwo = s2.length();
 
-    if (lenS1 != lenS2)
+    if (lenStrOne != lenStrTwo)
       return false;
+      
     s1 = s1.toLowerCase();
     s2 = s2.toLowerCase();
 
-    System.out.println(s1);
-    System.out.println(s2);
+    char [] s1Auxiliar = s1.toCharArray();
+    char [] s2Auxiliar = s2.toCharArray();
 
-    char [] s1aux = s1.toCharArray();
-    char [] s2aux = s2.toCharArray();
+    Arrays.sort(s1Auxiliar);
+    Arrays.sort(s2Auxiliar);
 
-    Arrays.sort(s1aux);
-    Arrays.sort(s2aux);
-    System.out.println(s1aux);
-    System.out.println(s2aux);
-
-    s1 = String.valueOf(s1aux);
-    s2 = String.valueOf(s2aux);
+    s1 = String.valueOf(s1Auxiliar);
+    s2 = String.valueOf(s2Auxiliar);
 
     if (s1.equals(s2)) response = true;
 
