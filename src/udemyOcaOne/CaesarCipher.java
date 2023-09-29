@@ -2,8 +2,7 @@ package udemyOcaOne;
 
 import java.time.LocalDate;
 import java.time.format.TextStyle;
-import java.util.Arrays;
-import java.util.Locale;
+import java.util.*;
 
 @ClassPreamble (
         author = "Ricardo Ferreira",
@@ -84,6 +83,16 @@ public class CaesarCipher {
     System.out.println(cipher);
     int[] m = {1,2,3,4,5,6};
     int[] n = new int[5];
+    Random random = new Random();
+    Integer number = null;
+    Integer size = random.nextInt(100);
+    int [] aa = new int[size];
+    List<Integer> ab = new ArrayList<>();
+    for (int i=0; i<size;i++) {
+      ab.add(random.nextInt(100));
+    }
+    ab.stream().filter(a -> a %2 ==0).distinct().sorted().forEach(x -> System.out.printf("%d ", x));
+    System.out.println(ab);
 
     System.out.println(Arrays.toString(mat(m)));
 
