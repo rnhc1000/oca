@@ -16,13 +16,13 @@ The design is structured as shown:
     - udemyOcaOne|
 
 ## _Screenshot_
-[![](./java.png)](https://ferreiras.dev.br)
+[![](./java-4-logo-svgrepo-com.svg)](https://ferreiras.dev.br)
 ## _Links_
 - Live Site URL: [https://ferreiras.dev.br] 
 ## _Built with_
-| VS Code | Git | IntelliJ | Java | CentOS | 
+| Java | Git | IntelliJ | CentOS | VS Code | 
 |----------|----------|----------|----------|----------|
-![](https://ferreiras.dev.br/assets/images/icons/icons8-visual-studio-code.svg)  | ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | ![](https://ferreiras.dev.br/assets/images/icons/css3-original-wordmark.svg) | ![](https://ferreiras.dev.br/assets/images/icons/html5-original-wordmark.svg) | ![](https://ferreiras.dev.br/assets/images/icons/linux-original.svg) | 
+![](https://ferreiras.dev.br/assets/images/icons/java-icon.svg)| ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | ![](https://ferreiras.dev.br/assets/images/icons/intellij-idea-svgrepo-com.svg) | ![](https://ferreiras.dev.br/assets/images/icons/linux-original.svg) | ![](https://ferreiras.dev.br/assets/images/icons/icons8-visual-studio-code.svg)  
 
  ## _What I practiced_
 ```java
