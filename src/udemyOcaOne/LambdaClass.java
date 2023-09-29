@@ -4,6 +4,14 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
+@ClassPreamble(
+        author = "Ricardo Ferreira",
+        date = "25/07/2023",
+        currentRevision = 7,
+        lastModified = "28/09/2023",
+        lastModifiedBy = "Ricardo Ferreira",
+        reviewers = {}
+)
 @FunctionalInterface
 interface Calculator {
   int sumNumbers(int a, int b);
